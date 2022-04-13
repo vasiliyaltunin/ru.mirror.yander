@@ -1,0 +1,33 @@
+[updates-testing-modular]
+name=Fedora Modular $releasever - $basearch - Test Updates
+baseurl=http://mirror.yandex.ru/fedora/linux/updates/testing/$releasever/Modular/$basearch/
+enabled=0
+countme=1
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-testing-modular-debuginfo]
+name=Fedora Modular $releasever - $basearch - Test Updates Debug
+baseurl=http://mirror.yandex.ru/fedora/linux/updates/$releasever/Modular/$basearch/debug/
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-testing-modular-source]
+name=Fedora Modular $releasever - Test Updates Source
+baseurl=http://mirror.yandex.ru/fedora/linux/updates/$releasever/Modular/SRPMS/
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False

@@ -1,0 +1,33 @@
+[fedora]
+name=Fedora $releasever - $basearch
+baseurl=https://mirror.yandex.ru/fedora/linux/releases/$releasever/Everything/x86_64/os
+enabled=1
+countme=1
+metadata_expire=7d
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[fedora-debuginfo]
+name=Fedora $releasever - $basearch - Debug
+baseurl=https://mirror.yandex.ru/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/
+enabled=0
+metadata_expire=7d
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[fedora-source]
+name=Fedora $releasever - Source
+baseurl=http://mirror.yandex.ru/fedora/linux/releases/$releasever/Everything/source/tree/
+enabled=0
+metadata_expire=7d
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
