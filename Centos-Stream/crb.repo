@@ -1,0 +1,27 @@
+[crb]
+name=CentOS Stream $releasever - CRB
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/CRB/$basearch/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=0
+
+[crb-debug]
+name=CentOS Stream $releasever - CRB - Debug
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/CRB/$basearch/debug/tree
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+enabled=0
+
+[crb-source]
+name=CentOS Stream $releasever - CRB - Source
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/CRB/source/tree
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+enabled=0

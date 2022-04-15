@@ -1,0 +1,27 @@
+[baseos]
+name=CentOS Stream $releasever - BaseOS
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/BaseOS/$basearch/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=1
+
+[baseos-debug]
+name=CentOS Stream $releasever - BaseOS - Debug
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/BaseOS/$basearch/debug/tree
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+enabled=0
+
+[baseos-source]
+name=CentOS Stream $releasever - BaseOS - Source
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/BaseOS/source/tree
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+enabled=0

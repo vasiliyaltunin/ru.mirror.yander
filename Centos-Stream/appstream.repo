@@ -1,0 +1,27 @@
+[appstream]
+name=CentOS Stream $releasever - AppStream
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/AppStream/$basearch/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=1
+
+[appstream-debug]
+name=CentOS Stream $releasever - AppStream - Debug
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/AppStream/$basearch/debug/tree
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+enabled=0
+
+[appstream-source]
+name=CentOS Stream $releasever - AppStream - Source
+baseurl=https://mirror.yandex.ru/centos-stream/$stream/AppStream/source/tree
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+enabled=0
